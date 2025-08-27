@@ -16,10 +16,10 @@ class GetRepository{
 
                 'Not Found'=>"Document Non trouvé"
 
-            ]);
+            ],400);
 
         }
 
-        return response()->json($document);
+        return response()->json($document,200);
     }
 }

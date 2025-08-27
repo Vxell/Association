@@ -15,8 +15,8 @@ class GetDataController extends Controller
         $this->getrepository = $getrepository;
     }
 
-    public function getdocument(Request $request){
+    public function getdocument($slug){
 
-        return $this->getrepository->getdocument($request);
+        return $this->getrepository->getdocument($slug);
     }
 }

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Mobile;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Repositories\AuthRepository;
-use App\Http\Requests\Mobile\AuthLoginRequest;
+use App\Http\Requests\AuthLoginRequest;
 
 class AuthController extends Controller
 {

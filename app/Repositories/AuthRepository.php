@@ -3,10 +3,11 @@
 namespace App\Repositories;
 
 use App\Models\User;
+use Illuminate\Http\Request;
 use App\Repositories\AuthRepository;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use App\Http\Requests\Mobile\AuthLoginRequest;
+use App\Http\Requests\AuthLoginRequest;
 
 class AuthRepository{
 
