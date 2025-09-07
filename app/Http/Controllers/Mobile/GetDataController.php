@@ -19,4 +19,9 @@ class GetDataController extends Controller
 
         return $this->getrepository->getdocument($slug);
     }
+
+    public function getalldocument(Request $request){
+
+        return $this->getrepository->getalldocument();
+    }
 }

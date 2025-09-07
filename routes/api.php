@@ -15,6 +15,7 @@ Route::group(['prefix' => 'V1'],function(){
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/login', [AuthController::class, 'login']);
     Route::get('/get-document/{slug}' , [GetDataController::class, 'getdocument']);
+    Route::get('/get-alldocument' , [GetDataController::class, 'getalldocument']);
 
 });
 

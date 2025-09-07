@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Categorie;
 use Illuminate\Database\Eloquent\Model;
 
 class Document extends Model
@@ -10,6 +11,15 @@ class Document extends Model
 
         'libelle',
         'pdf',
-        'slug'
+        'slug',
+        'categorie_id'
     ];
+
+
+    public function categorie(): BelongsTo
+    {
+        return $this->belongsTo(Categorie::class, 'categorie_id',);
+    }
+
+
 }
